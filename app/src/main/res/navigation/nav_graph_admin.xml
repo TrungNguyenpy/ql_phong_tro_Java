@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_admin"
+    app:startDestination="@id/navigation_admin_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_admin_dashboard"
+        android:name="com.example.manager_room.ui.admin.AdminDashboardFragment"
+        android:label="Tổng quan" />
+
+    <fragment
+        android:id="@+id/navigation_admin_rooms"
+        android:name="com.example.manager_room.ui.admin.AdminRoomListFragment"
+        android:label="Danh sách phòng" />
+
+    <fragment
+        android:id="@+id/navigation_admin_meter"
+        android:name="com.example.manager_room.ui.admin.AdminMeterFragment"
+        android:label="Điện nước" />
+
+    <fragment
+        android:id="@+id/navigation_admin_invoices"
+        android:name="com.example.manager_room.ui.admin.AdminInvoiceFragment"
+        android:label="Hóa đơn" />
+
+    <fragment
+        android:id="@+id/navigation_admin_room_detail"
+        android:name="com.example.manager_room.ui.admin.AdminRoomDetailFragment"
+        android:label="Chi tiết phòng">
+        <argument
+            android:name="roomId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_admin_invoice_create"
+        android:name="com.example.manager_room.ui.admin.AdminInvoiceCreateFragment"
+        android:label="Tạo hóa đơn" />
+
+</navigation>

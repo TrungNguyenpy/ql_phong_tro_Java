@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_user"
+    app:startDestination="@id/navigation_user_home">
+
+    <fragment
+        android:id="@+id/navigation_user_home"
+        android:name="com.example.manager_room.ui.user.UserHomeFragment"
+        android:label="Trang chính" />
+
+    <fragment
+        android:id="@+id/navigation_user_meter"
+        android:name="com.example.manager_room.ui.user.UserMeterFragment"
+        android:label="Điện nước" />
+
+    <fragment
+        android:id="@+id/navigation_user_contract"
+        android:name="com.example.manager_room.ui.user.UserContractFragment"
+        android:label="Hợp đồng" />
+
+    <fragment
+        android:id="@+id/navigation_user_invoices"
+        android:name="com.example.manager_room.ui.user.UserInvoiceListFragment"
+        android:label="Danh sách Hóa đơn" />
+
+    <fragment
+        android:id="@+id/navigation_user_profile"
+        android:name="com.example.manager_room.ui.user.UserProfileFragment"
+        android:label="Hồ sơ cá nhân" />
+</navigation>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarContract"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg_light"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="@color/text_primary"
+        app:title="Hợp đồng thuê phòng"
+        app:titleTextColor="@color/text_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:clipToPadding="false">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Custom.CardStat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/tvContractBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="20dp"
+                android:text="Đang tải hợp đồng..."
+                android:textColor="@color/text_primary"
+                android:textIsSelectable="true"
+                android:textSize="14sp" />
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_light"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditLandlord"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="52dp"
+            android:text="Thông tin chủ trọ"
+            android:textColor="@color/primary_slate_blue"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/stroke_light" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExportContract"
+            style="@style/Widget.App.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xuất PDF" />
+    </LinearLayout>
+</LinearLayout>
